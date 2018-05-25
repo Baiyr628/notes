@@ -1,4 +1,4 @@
-# jquery复习
+# jquery
 ### jquery语法
 
     $(document).ready(function(){ //防止文档在没有加载完之前执行jq
@@ -64,4 +64,34 @@
 	toggle()    //切换
 	trigger()   //触发
 	triggerHandlar()    //触发被选元素的指定时间，阻止默认事件，不会发生冒泡事件
-	
+### jquery 效果
+#### 隐藏、显示
+	show()     hide()     toggle()
+#### 淡入淡出
+	fadeIn() //淡入   fadeOut()  //淡出   fadeToggle()      fadeTo()   允许渐变，给定不透明度
+#### 滑动
+	slideDown() //向下滑动元素  slideUp() //向上滑动元素      slideToggle()
+#### 动画
+	animate()   eg:$(selector).animate({params},speed,callback);
+### 获取
+#### 获取内容 
+	text()       html()      val()
+####  获取属性
+	attr()       
+#### 添加元素
+	append()//被选元素结尾添加      prepend()//被选元素开头      after()//被选元素之后     before()//被选元素之前
+#### 删除
+	remove()//删除被选元素          empty()//从被选元素中删除子元素
+#### css类
+	addClass()       removeClass()      toggleClass()     css()
+#### 尺寸
+	width()    height()    innWidth() //包括内边距    innHeight()    outerWidth()//包括内边距和外边距     outerHeight()
+### 遍历
+#### 祖先
+	parent() //被选的直接父元素       parents() //所有祖先元素      parentUntil()//介于两个给定元素之间的所有祖先元素
+#### 后代
+	find()      children()
+#### 同胞
+	siblings()    next()     nextAll()    nextUntil() //介于两个给定参数之间的元素     prev()    preAll()     preUntil()
+#### 过滤
+	first()    last()       eq()      filter()//返回匹配元素        not() //返回不匹配的元素
