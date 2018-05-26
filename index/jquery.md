@@ -25,7 +25,7 @@
 #### jquery事件
 	bind();  eg: $('button').bind("click",function(){}) //向button绑定一个click事件
 	unbind()   //移除绑定事件
-	blur();  eg: $("input").blur(function(){}) //当指定区域是去焦点触发function(){}
+	blur();  eg: $("input").blur(function(){}) //当指定区域失焦点触发function(){}
 	focus();  eg: $('input').focus(function(){} //当指定区域获取焦点执行funcyion(){}
 	change(); eg: $('input').change(function(){}) //指定区域发生改变时执行方法，仅适用于select,textarea
 	click();  eg: $('p').click(function(){}) //点击事件
@@ -38,7 +38,7 @@
 	event.defaultPrevent()  //阻止事件默认动作
 	event.isDefaultPrevented() //返回event对象是否调用了event.defaultPrevent()
 	event.pageX()  //相对于文档左边鼠标的位置
-	event.pageY() //相对于文档左边缘鼠标的位置
+	event.pageY() //相对于文档上边缘鼠标的位置
 	event.result()  //显示最后一次点击事件的返回结果
 	event.target()  //触发该事件的dom元素
 	event.type()   //描述事件类型
